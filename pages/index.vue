@@ -16,8 +16,8 @@
     <div class="training-box">
       <h2>筋トレメニュー 達成率{{ progress }}%</h2>
       <div class="training-menu">
-        <ul>
-          <li><input type='checkbox' value='腕立て伏せ'></li>
+        <ul v-for="menu in trainingMenu" :key="menu">
+          <li><input type='checkbox'>{{ menu }}</li>
         </ul>
       </div>
     </div>
@@ -25,15 +25,19 @@
 </template>
 
 <script>
+
 import moment from 'moment'
 
 export default {
-
-  filters: ()=>({
-  }),
   data: ()=>({
     nowdate:moment().format('YYYY年MM月DD日'),
     usrname:'花子',
+    trainingMenu:['腕立て','腹筋','筋トレ'],
+    progress:0,
+    usrHeight:0,
+    usrWeight:0,
+    usrBmi:0,
+    usrFat:0
   }),
   methods: ()=>({
 

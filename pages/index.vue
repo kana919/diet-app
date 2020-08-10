@@ -14,6 +14,8 @@
         <li>体脂肪率：{{ usrFat }}%</li>
       </ul>
     </div>
+    <div class="graph-box">
+    </div>
     <div class="usrgraph-box">
     </div>
     <div class="training-box">
@@ -58,6 +60,7 @@ export default {
 
 .container ul{
   list-style: none;
+  padding: 0px;
 }
 
 /**********************************/
@@ -84,11 +87,14 @@ export default {
 /**********************************/
 
 .usrdata-box{
+  display: inline-block;
+  width: 25%;
   font-size: 20px;
   margin: 5px;
   padding: 10px;
-  border: 2px solid #f08080;
-  border-radius: 5px;
+  border: 4px solid #000000;
+  border-radius: 15px;
+  background-color: #ffffff;
 }
 
 .usrdata-box li{
@@ -99,13 +105,31 @@ export default {
 }
 
 /**********************************/
+/*         グラフデータ         　  */
+/**********************************/
+.graph-box{
+  display: inline-block;
+  width: 70%;
+  font-size: 20px;
+  margin: 5px;
+  margin-left: 10px;
+  padding: 10px;
+  border: 4px solid #000000;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+/**********************************/
 /*         筋トレメニュー           */
 /**********************************/
 .training-box{
+  display: block;
   font-size: 20px;
+  margin: 5px;
   padding: 10px;
-  border: 2px solid #f08080;
-  border-radius: 5px;
+  border: 4px solid #000000;
+  border-radius: 15px;
+  background-color: #ffffff;
 }
 
 

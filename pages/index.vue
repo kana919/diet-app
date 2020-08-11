@@ -14,6 +14,7 @@
         <li>体脂肪率：{{ usrFat }}%</li>
       </ul>
     </div>
+    <img class="siba-illust" src="~assets/image/siba-taijukei.png"  alt="柴犬">
     <div class="graph-box">
     </div>
     <div class="usrgraph-box">
@@ -42,7 +43,7 @@ export default {
     usrHeight:0,
     usrWeight:0,
     usrBmi:0,
-    usrFat:0
+    usrFat:0,
   })
 }
 </script>
@@ -105,11 +106,21 @@ export default {
 }
 
 /**********************************/
+/*         イラスト配置             */
+/**********************************/
+.siba-illust{
+  position: relative;
+  bottom: -30px;
+  left: -15px;
+}
+
+
+/**********************************/
 /*         グラフデータ         　  */
 /**********************************/
 .graph-box{
   display: inline-block;
-  width: 70%;
+  width: 35%;
   font-size: 20px;
   margin: 5px;
   margin-left: 10px;

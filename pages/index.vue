@@ -16,6 +16,7 @@
     </div>
     <img class="siba-illust" src="~assets/image/siba-taijukei.png"  alt="柴犬">
     <div class="graph-box">
+      <BarChart />
     </div>
     <div class="usrgraph-box">
     </div>
@@ -33,6 +34,7 @@
 <script>
 
 import moment from 'moment'
+import BarChart from '@/components/BarChart.vue'
 
 export default {
   data: ()=>({
@@ -43,8 +45,11 @@ export default {
     usrHeight:0,
     usrWeight:0,
     usrBmi:0,
-    usrFat:0,
-  })
+    usrFat:0,     
+  }),
+  components: {
+    BarChart
+  }
 }
 </script>
 
